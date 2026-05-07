@@ -1,0 +1,1580 @@
+[
+    {
+        "id": "36a8ab45.86ab94",
+        "type": "tab",
+        "label": "Overview",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "248d8d85.7a4412",
+        "type": "inject",
+        "z": "36a8ab45.86ab94",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 80,
+        "wires": [
+            [
+                "2fbfa116.698a26"
+            ]
+        ]
+    },
+    {
+        "id": "cfaa7840.5342",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Manufacturer:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 720,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "b85853dc.1d72c",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Model:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 690,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "fc3f114f.ac694",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "ManufacturerAddress:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 740,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "7c323063.60a14",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "HardwareRevision:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6d198a8e.21fa1c",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 11,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SerialNumber:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 720,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "6c7a5579.fd7dfc",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DeviceManual:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 720,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "2fbfa116.698a26",
+        "type": "ui_template",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "name": "",
+        "order": 3,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center\">\n    <img src=\"..\\TCL.png\" width=\"100%\"/>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89b595d1.2fcd2",
+        "type": "inject",
+        "z": "36a8ab45.86ab94",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "ca7b18ae.e5a2a8"
+            ]
+        ]
+    },
+    {
+        "id": "ca7b18ae.e5a2a8",
+        "type": "ui_template",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "name": "Digital Nameplate",
+        "order": 6,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center; font-size: 1em; color: white; background: black\">\n    Digital Nameplate\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 470,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2feffbc05d4be9a1",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "SoftwareRevision:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "8c0f39fd1eb8cecd",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 12,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "DeviceRevision:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 720,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "f25217fdc91b5ebf",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "BoardModel:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 710,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "2e546f90ec0c2f55",
+        "type": "ui_text",
+        "z": "36a8ab45.86ab94",
+        "group": "36e9f824.16b2",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "NumberOfHeater:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 730,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "50d4984c1329bda4",
+        "type": "inject",
+        "z": "36a8ab45.86ab94",
+        "name": "?OPC UA integration?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 280,
+        "y": 620,
+        "wires": [
+            [
+                "8c0f39fd1eb8cecd",
+                "cfaa7840.5342",
+                "b85853dc.1d72c",
+                "fc3f114f.ac694",
+                "6d198a8e.21fa1c",
+                "6c7a5579.fd7dfc",
+                "2feffbc05d4be9a1",
+                "7c323063.60a14",
+                "f25217fdc91b5ebf",
+                "2e546f90ec0c2f55"
+            ]
+        ]
+    },
+    {
+        "id": "372cc78f.3c11f8",
+        "type": "tab",
+        "label": "InputTemperature 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "71f120f9.1df59",
+        "type": "function",
+        "z": "372cc78f.3c11f8",
+        "name": "temperature1",
+        "func": "function getRndInteger(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) ) + min;\n}\n\nmsg.payload=getRndInteger(20, 50)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 360,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "736b8c94.febf9c",
+        "type": "ui_chart",
+        "z": "372cc78f.3c11f8",
+        "name": "TempChart",
+        "group": "572c601d.e4943",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature 1 in °C",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "cubic",
+        "nodata": "loading ....",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "30",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 430,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8db3f885.6a82b",
+        "type": "inject",
+        "z": "372cc78f.3c11f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 160,
+        "wires": [
+            [
+                "71f120f9.1df59"
+            ]
+        ]
+    },
+    {
+        "id": "c2ea43b8.6738a8",
+        "type": "ui_text",
+        "z": "372cc78f.3c11f8",
+        "group": "572c601d.e4943",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 410,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "749aa558.58cefc",
+        "type": "inject",
+        "z": "372cc78f.3c11f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "str",
+        "x": 170,
+        "y": 540,
+        "wires": [
+            [
+                "f12f15ea.71e738"
+            ]
+        ]
+    },
+    {
+        "id": "f12f15ea.71e738",
+        "type": "ui_text",
+        "z": "372cc78f.3c11f8",
+        "group": "572c601d.e4943",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 400,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "d21f3ea6.4403e",
+        "type": "inject",
+        "z": "372cc78f.3c11f8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "60",
+        "payloadType": "str",
+        "x": 170,
+        "y": 600,
+        "wires": [
+            [
+                "cd96716e.3d39e8"
+            ]
+        ]
+    },
+    {
+        "id": "cd96716e.3d39e8",
+        "type": "ui_text",
+        "z": "372cc78f.3c11f8",
+        "group": "572c601d.e4943",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 400,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "4f6e4a11.076bac",
+        "type": "ui_template",
+        "z": "372cc78f.3c11f8",
+        "group": "572c601d.e4943",
+        "name": "",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center; font-size: 1em; color: white; background: {{(msg.payload>=30 && msg.payload<=60) ? 'green' : 'red'}}\">\n    Status<br>\n    <b>{{(msg.payload>=30 && msg.payload<=60) ? 'Good - No Need to Act' : 'Error - Check Signal Chain'}}</b>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 420,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1c5fbaa.cb5df8",
+        "type": "ui_text",
+        "z": "372cc78f.3c11f8",
+        "group": "572c601d.e4943",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Unit:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 410,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "6fbbeab8a5cc4d4a",
+        "type": "inject",
+        "z": "372cc78f.3c11f8",
+        "name": "?OPC UA integration?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 420,
+        "wires": [
+            [
+                "736b8c94.febf9c",
+                "c2ea43b8.6738a8",
+                "e1c5fbaa.cb5df8",
+                "4f6e4a11.076bac"
+            ]
+        ]
+    },
+    {
+        "id": "3df697c2.b13998",
+        "type": "tab",
+        "label": "Heater 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "fd5bc6b6.43a638",
+        "type": "function",
+        "z": "3df697c2.b13998",
+        "name": "heater1",
+        "func": "function getRndInteger(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) ) + min;\n}\n\nmsg.payload=getRndInteger(0, 100)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "da27a2b9.212f2",
+        "type": "ui_chart",
+        "z": "3df697c2.b13998",
+        "name": "ActualTemperatureChart",
+        "group": "89d0a5dc.9fed88",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "ActualTemperature 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "loading ....",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "30",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 450,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "71653502.f3dc4c",
+        "type": "inject",
+        "z": "3df697c2.b13998",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "fd5bc6b6.43a638"
+            ]
+        ]
+    },
+    {
+        "id": "fdbe53d5.e90f68",
+        "type": "ui_text",
+        "z": "3df697c2.b13998",
+        "group": "89d0a5dc.9fed88",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "bc5b59f.ca7d328",
+        "type": "inject",
+        "z": "3df697c2.b13998",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "30",
+        "payloadType": "str",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "e6c84010.b83978"
+            ]
+        ]
+    },
+    {
+        "id": "e6c84010.b83978",
+        "type": "ui_text",
+        "z": "3df697c2.b13998",
+        "group": "89d0a5dc.9fed88",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "ed225c8a.b761a",
+        "type": "inject",
+        "z": "3df697c2.b13998",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "60",
+        "payloadType": "str",
+        "x": 150,
+        "y": 620,
+        "wires": [
+            [
+                "d2a5e14a.e99ac8"
+            ]
+        ]
+    },
+    {
+        "id": "d2a5e14a.e99ac8",
+        "type": "ui_text",
+        "z": "3df697c2.b13998",
+        "group": "89d0a5dc.9fed88",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "9d81073a.327ee",
+        "type": "ui_template",
+        "z": "3df697c2.b13998",
+        "group": "89d0a5dc.9fed88",
+        "name": "",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center; font-size: 1em; color: white; background: {{(msg.payload>=30 && msg.payload<=60) ? 'green' : 'red'}}\">\n    Status<br>\n    <b>{{(msg.payload>=30 && msg.payload<=60) ? 'Good - No Need to Act' : 'Error - Check Signal Chain'}}</b>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8797069.d93af8",
+        "type": "ui_text",
+        "z": "3df697c2.b13998",
+        "group": "89d0a5dc.9fed88",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Unit:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "d69e36ac5826926a",
+        "type": "inject",
+        "z": "3df697c2.b13998",
+        "name": "?OPC UA integration?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 380,
+        "wires": [
+            [
+                "e8797069.d93af8",
+                "fdbe53d5.e90f68",
+                "9d81073a.327ee",
+                "da27a2b9.212f2"
+            ]
+        ]
+    },
+    {
+        "id": "d8068ea.5aa86f",
+        "type": "tab",
+        "label": "LED",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "666aa606.42abc",
+        "type": "function",
+        "z": "d8068ea.5aa86f",
+        "name": "LED",
+        "func": "function getRndInteger(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) ) + min;\n}\n\nmsg.payload=getRndInteger(0, 1)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "40069953.c64568",
+        "type": "ui_chart",
+        "z": "d8068ea.5aa86f",
+        "name": "LEDChart",
+        "group": "58c39458.f2096c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "LED",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "loading ....",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "30",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 440,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d8475b28.b97768",
+        "type": "inject",
+        "z": "d8068ea.5aa86f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 200,
+        "wires": [
+            [
+                "666aa606.42abc"
+            ]
+        ]
+    },
+    {
+        "id": "406d580a.53c04",
+        "type": "ui_text",
+        "z": "d8068ea.5aa86f",
+        "group": "58c39458.f2096c",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 430,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "d3ae0d24.51c1e",
+        "type": "inject",
+        "z": "d8068ea.5aa86f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 190,
+        "y": 580,
+        "wires": [
+            [
+                "86f1d053.1627a"
+            ]
+        ]
+    },
+    {
+        "id": "86f1d053.1627a",
+        "type": "ui_text",
+        "z": "d8068ea.5aa86f",
+        "group": "58c39458.f2096c",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 420,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "4429ce06.c471d",
+        "type": "inject",
+        "z": "d8068ea.5aa86f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "a5576891.0ac3e"
+            ]
+        ]
+    },
+    {
+        "id": "a5576891.0ac3e",
+        "type": "ui_text",
+        "z": "d8068ea.5aa86f",
+        "group": "58c39458.f2096c",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 420,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "6588f2ad.4e3cfc",
+        "type": "ui_template",
+        "z": "d8068ea.5aa86f",
+        "group": "58c39458.f2096c",
+        "name": "",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center; font-size: 1em; color: white; background: {{(msg.payload>=0 && msg.payload<=1) ? 'green' : 'red'}}\">\n    Status<br>\n    <b>{{(msg.payload>=0 && msg.payload<=1) ? 'Good - No Need to Act' : 'Error - Check Signal Chain'}}</b>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 440,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8827e8cf.6cec1",
+        "type": "inject",
+        "z": "d8068ea.5aa86f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "-",
+        "payloadType": "str",
+        "x": 190,
+        "y": 520,
+        "wires": [
+            [
+                "f07e67ca.838e6"
+            ]
+        ]
+    },
+    {
+        "id": "f07e67ca.838e6",
+        "type": "ui_text",
+        "z": "d8068ea.5aa86f",
+        "group": "58c39458.f2096c",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Unit:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "43cae7b064afefe0",
+        "type": "inject",
+        "z": "d8068ea.5aa86f",
+        "name": "?OPC UA integration?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 400,
+        "wires": [
+            [
+                "406d580a.53c04",
+                "6588f2ad.4e3cfc",
+                "40069953.c64568"
+            ]
+        ]
+    },
+    {
+        "id": "a67daa24.68d77",
+        "type": "tab",
+        "label": "Manipulated Variable 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "51523294.5e7dcc",
+        "type": "function",
+        "z": "a67daa24.68d77",
+        "name": "heater1",
+        "func": "function getRndInteger(min, max) {\n  return Math.floor(Math.random() * (max - min + 1) ) + min;\n}\n\nmsg.payload=getRndInteger(0, 100)\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1f8af656.278f8a",
+        "type": "ui_chart",
+        "z": "a67daa24.68d77",
+        "name": "ManipulatedChart",
+        "group": "b1bc9efd.eb9e48",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Manipulated variable 1",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "step",
+        "nodata": "loading ....",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "30",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "x": 430,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "85c005ff.841838",
+        "type": "inject",
+        "z": "a67daa24.68d77",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "4",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 180,
+        "wires": [
+            [
+                "51523294.5e7dcc"
+            ]
+        ]
+    },
+    {
+        "id": "30958220.787fbe",
+        "type": "ui_text",
+        "z": "a67daa24.68d77",
+        "group": "b1bc9efd.eb9e48",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Value:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 390,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ae828f46.fe8988",
+        "type": "inject",
+        "z": "a67daa24.68d77",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            [
+                "4d10ebaf.1b054c"
+            ]
+        ]
+    },
+    {
+        "id": "4d10ebaf.1b054c",
+        "type": "ui_text",
+        "z": "a67daa24.68d77",
+        "group": "b1bc9efd.eb9e48",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "424728b3.3902d8",
+        "type": "inject",
+        "z": "a67daa24.68d77",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "80",
+        "payloadType": "str",
+        "x": 150,
+        "y": 620,
+        "wires": [
+            [
+                "a8d80853.f03058"
+            ]
+        ]
+    },
+    {
+        "id": "a8d80853.f03058",
+        "type": "ui_text",
+        "z": "a67daa24.68d77",
+        "group": "b1bc9efd.eb9e48",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Min. Threshold:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 380,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "bfb9d7e5.b7db5",
+        "type": "ui_template",
+        "z": "a67daa24.68d77",
+        "group": "b1bc9efd.eb9e48",
+        "name": "",
+        "order": 2,
+        "width": "0",
+        "height": "0",
+        "format": "<div style=\"text-align: center; font-size: 1em; color: white; background: {{(msg.payload>=0 && msg.payload<=80) ? 'green' : 'red'}}\">\n    Status<br>\n    <b>{{(msg.payload>=0 && msg.payload<=80) ? 'Good - No Need to Act' : 'Error - Check Signal Chain'}}</b>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "x": 400,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "69d87018.b9011",
+        "type": "inject",
+        "z": "a67daa24.68d77",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "%",
+        "payloadType": "str",
+        "x": 150,
+        "y": 500,
+        "wires": [
+            [
+                "a2f6edc5.24d0e"
+            ]
+        ]
+    },
+    {
+        "id": "a2f6edc5.24d0e",
+        "type": "ui_text",
+        "z": "a67daa24.68d77",
+        "group": "b1bc9efd.eb9e48",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Unit:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 350,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "26b13e5bdccbb445",
+        "type": "inject",
+        "z": "a67daa24.68d77",
+        "name": "?OPC UA integration?",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 400,
+        "wires": [
+            [
+                "30958220.787fbe",
+                "bfb9d7e5.b7db5",
+                "1f8af656.278f8a"
+            ]
+        ]
+    },
+    {
+        "id": "36e9f824.16b2",
+        "type": "ui_group",
+        "name": "Monitoring + Optimization",
+        "tab": "e86391ef.481218",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "572c601d.e4943",
+        "type": "ui_group",
+        "name": "Monitoring + Optimization",
+        "tab": "c866ef46.b58978",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "89d0a5dc.9fed88",
+        "type": "ui_group",
+        "name": "Monitoring + Optimization",
+        "tab": "8b0e0efa.e4a368",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "58c39458.f2096c",
+        "type": "ui_group",
+        "name": "Monitoring + Optimization",
+        "tab": "ec539c2b.a55dc",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "b1bc9efd.eb9e48",
+        "type": "ui_group",
+        "name": "Monitoring + Optimization",
+        "tab": "9b8e15ac.958438",
+        "order": 1,
+        "disp": true,
+        "width": "13",
+        "collapse": false
+    },
+    {
+        "id": "e86391ef.481218",
+        "type": "ui_tab",
+        "name": "Overview",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "c866ef46.b58978",
+        "type": "ui_tab",
+        "name": "Temperature 1",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "8b0e0efa.e4a368",
+        "type": "ui_tab",
+        "name": "ActualTemperature 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ec539c2b.a55dc",
+        "type": "ui_tab",
+        "name": "LED",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9b8e15ac.958438",
+        "type": "ui_tab",
+        "name": "Manipulated variable 1",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b1abf945c5ee6ff2",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-dashboard": "3.6.6"
+        }
+    }
+]
