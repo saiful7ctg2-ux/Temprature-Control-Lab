@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UANodeSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" xmlns:uax="http://opcfoundation.org/UA/2008/02/Types.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <NamespaceUris>
+        <Uri>http://ovgu.de/heater_instance/</Uri>
+        <Uri>http://ovgu.de/heater/</Uri>
+        <Uri>http://opcfoundation.org/UA/DI/</Uri>
+    </NamespaceUris>
+    <Models>
+        <Model ModelUri="http://ovgu.de/heater_instance/" PublicationDate="2026-01-16T12:00:00Z" Version="1.0.0">
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/" Version="1.05.01" PublicationDate="2022-02-24T00:00:00Z"/>
+            <RequiredModel ModelUri="http://opcfoundation.org/UA/DI/" Version="1.03.1" PublicationDate="2021-09-07T00:00:00Z"/>
+            <RequiredModel ModelUri="http://ovgu.de/heater/" Version="1.0.0" PublicationDate="2026-01-14T18:30:32Z"/>
+        </Model>
+    </Models>
+    <Aliases>
+        <Alias Alias="Boolean">i=1</Alias>
+        <Alias Alias="Double">i=11</Alias>
+        <Alias Alias="String">i=12</Alias>
+        <Alias Alias="HasTypeDefinition">i=40</Alias>
+        <Alias Alias="HasComponent">i=47</Alias>
+        <Alias Alias="HasProperty">i=46</Alias>
+        <Alias Alias="Organizes">i=35</Alias>
+        <Alias Alias="EUInformation">i=887</Alias>
+    </Aliases>
+
+    
+<UAObject NodeId="ns=1;s=HeaterDevice" BrowseName="1:HeaterDevice">
+    <DisplayName>HeaterDevice</DisplayName>
+    <Description>Temperature Control Lab Heater Device</Description>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">ns=2;i=1004</Reference>
+        <Reference IsForward="false" ReferenceType="Organizes">ns=3;i=5001</Reference>
+        <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_SubDevices</Reference>
+        <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_Manufacturer</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_Model</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_ManufacturerAddress</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_HardwareRevision</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_SerialNumber</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_DeviceManual</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_SoftwareRevision</Reference>
+        <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_DeviceRevision</Reference>
+    </References>
+</UAObject>
+    
+   
+   
+<UAVariable NodeId="ns=1;s=HeaterDevice_Manufacturer" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:Manufacturer">
+    <DisplayName>Manufacturer</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>Byu Prism</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_Model" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:Model">
+    <DisplayName>Model</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>Arduino Temperature Control Lab</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_ManufacturerAddress" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="1:ManufacturerAddress">
+    <DisplayName>ManufacturerAddress</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>Brigham Young University, Provo, UT 84602</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_HardwareRevision" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:HardwareRevision">
+    <DisplayName>HardwareRevision</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String> Arduino Leonardo + TCLab Shield</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_SerialNumber" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:SerialNumber">
+    <DisplayName>SerialNumber</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>F7DH4HJ</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_DeviceManual" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:DeviceManual">
+    <DisplayName>DeviceManual</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String> https://tclab.readthedocs.io/</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_SoftwareRevision" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:SoftwareRevision">
+    <DisplayName>SoftwareRevision</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>TCLab Firmware 1.3.0</uax:String>
+    </Value>
+</UAVariable>
+
+
+<UAVariable NodeId="ns=1;s=HeaterDevice_DeviceRevision" ParentNodeId="ns=1;s=HeaterDevice" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="0:DeviceRevision">
+    <DisplayName>DeviceRevision</DisplayName>
+    <References>
+        <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+        <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice</Reference>
+    </References>
+    <Value>
+        <uax:String>TCLab v2</uax:String>
+    </Value>
+</UAVariable>
+
+    
+    <UAObject NodeId="ns=1;s=HeaterDevice_SubDevices" ParentNodeId="ns=1;s=HeaterDevice" BrowseName="2:SubDevices">
+        <DisplayName>SubDevices</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_Controller</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_IoShield</Reference>
+        </References>
+    </UAObject>
+
+   
+    <UAObject NodeId="ns=1;s=HeaterDevice_Controller" ParentNodeId="ns=1;s=HeaterDevice_SubDevices" BrowseName="2:Controller">
+        <DisplayName>Controller</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1006</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_SubDevices</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_Controller_BoardModel</Reference>
+        </References>
+    </UAObject>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_Controller_BoardModel" ParentNodeId="ns=1;s=HeaterDevice_Controller" DataType="String" AccessLevel="1" UserAccessLevel="1" BrowseName="2:BoardModel">
+        <DisplayName>BoardModel</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice_Controller</Reference>
+        </References>
+        <Value>
+            <uax:String>Arduino LEONARDO R3</uax:String>
+        </Value>
+    </UAVariable>
+
+   
+    <UAObject NodeId="ns=1;s=HeaterDevice_IoShield" ParentNodeId="ns=1;s=HeaterDevice_SubDevices" BrowseName="2:IoShield">
+        <DisplayName>IoShield</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">ns=2;i=1003</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_SubDevices</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_IoShield_NumberOfHeaters</Reference>
+        </References>
+    </UAObject>
+
+   
+    <UAVariable NodeId="ns=1;s=HeaterDevice_IoShield_NumberOfHeaters" ParentNodeId="ns=1;s=HeaterDevice_IoShield" DataType="i=7" AccessLevel="1" UserAccessLevel="1" BrowseName="2:NumberOfHeaters">
+        <DisplayName>NumberOfHeaters</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice_IoShield</Reference>
+        </References>
+        <Value>
+            <uax:UInt32>2</uax:UInt32>
+        </Value>
+    </UAVariable>
+
+    
+    <UAObject NodeId="ns=1;s=HeaterDevice_ParameterSet" ParentNodeId="ns=1;s=HeaterDevice" BrowseName="1:ParameterSet">
+        <DisplayName>ParameterSet</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_InputTemperature1</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_OutputActualTemperature1</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_ManipulatedVariable</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_LED</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_Kp</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_Ki</Reference>
+            <Reference ReferenceType="HasComponent">ns=1;s=HeaterDevice_Heater2</Reference>
+        </References>
+    </UAObject>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_InputTemperature1" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:InputTemperature1">
+        <DisplayName>InputTemperature1</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_InputTemperature1_EngineeringUnits</Reference>
+        </References>
+        <Value>
+            <uax:Double>30.0</uax:Double>
+        </Value>
+    </UAVariable>
+
+   
+    <UAVariable NodeId="ns=1;s=HeaterDevice_InputTemperature1_EngineeringUnits" ParentNodeId="ns=1;s=HeaterDevice_InputTemperature1" DataType="EUInformation" AccessLevel="1" UserAccessLevel="1" BrowseName="0:EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice_InputTemperature1</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <EUInformation xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>4408652</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>°C</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>degree Celsius</Text>
+                        </Description>
+                    </EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+
+   
+    <UAVariable NodeId="ns=1;s=HeaterDevice_OutputActualTemperature1" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:OutputActualTemperature1">
+        <DisplayName>OutputActualTemperature1</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+            <Reference ReferenceType="HasProperty">ns=1;s=HeaterDevice_OutputActualTemperature1_EngineeringUnits</Reference>
+        </References>
+        <Value>
+            <uax:Double>23.0</uax:Double>
+        </Value>
+    </UAVariable>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_OutputActualTemperature1_EngineeringUnits" ParentNodeId="ns=1;s=HeaterDevice_OutputActualTemperature1" DataType="EUInformation" AccessLevel="1" UserAccessLevel="1" BrowseName="0:EngineeringUnits">
+        <DisplayName>EngineeringUnits</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+            <Reference IsForward="false" ReferenceType="HasProperty">ns=1;s=HeaterDevice_OutputActualTemperature1</Reference>
+        </References>
+        <Value>
+            <uax:ExtensionObject>
+                <uax:TypeId>
+                    <uax:Identifier>i=888</uax:Identifier>
+                </uax:TypeId>
+                <uax:Body>
+                    <EUInformation xmlns="http://opcfoundation.org/UA/2008/02/Types.xsd">
+                        <NamespaceUri>http://www.opcfoundation.org/UA/units/un/cefact</NamespaceUri>
+                        <UnitId>4408652</UnitId>
+                        <DisplayName>
+                            <Locale>en</Locale>
+                            <Text>°C</Text>
+                        </DisplayName>
+                        <Description>
+                            <Locale>en</Locale>
+                            <Text>degree Celsius</Text>
+                        </Description>
+                    </EUInformation>
+                </uax:Body>
+            </uax:ExtensionObject>
+        </Value>
+    </UAVariable>
+
+   
+    <UAVariable NodeId="ns=1;s=HeaterDevice_ManipulatedVariable" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:ManipulatedVariable">
+        <DisplayName>ManipulatedVariable</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.0</uax:Double>
+        </Value>
+    </UAVariable>
+
+   
+    <UAVariable NodeId="ns=1;s=HeaterDevice_LED" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Boolean" AccessLevel="3" UserAccessLevel="3" BrowseName="1:LED">
+        <DisplayName>LED</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        </References>
+        <Value>
+            <uax:Boolean>false</uax:Boolean>
+        </Value>
+    </UAVariable>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_Kp" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:Kp">
+        <DisplayName>Kp</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        </References>
+        <Value>
+            <uax:Double>18.81</uax:Double>
+        </Value>
+    </UAVariable>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_Ki" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:Ki">
+        <DisplayName>Ki</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.4315</uax:Double>
+        </Value>
+    </UAVariable>
+
+    
+    <UAVariable NodeId="ns=1;s=HeaterDevice_Heater2" ParentNodeId="ns=1;s=HeaterDevice_ParameterSet" DataType="Double" AccessLevel="3" UserAccessLevel="3" BrowseName="1:Heater2">
+        <DisplayName>Heater2</DisplayName>
+        <References>
+            <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+            <Reference IsForward="false" ReferenceType="HasComponent">ns=1;s=HeaterDevice_ParameterSet</Reference>
+        </References>
+        <Value>
+            <uax:Double>0.0</uax:Double>
+        </Value>
+    </UAVariable>
+
+</UANodeSet>
